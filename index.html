@@ -20,7 +20,35 @@
   cursor: pointer;
 }
 
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.sponsor img {
+    max-width: 100px; /* Default size for all logos */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.sponsor img:hover {
+    transform: scale(1.1);
+}
+
+/* Specific style for the Microsoft Research logo */
+.sponsor img[alt="Microsoft Research"] {
+    max-width: 200px; /* Increasing the size specifically for MSR logo since it is smaller */
+}
+
+.is-rounded img:hover {
+  transform: scale(1.1);
+}
+
 .is-rounded {border-radius: 12px;}
+
 
 /* Darker background on mouse-over */
 .btn:hover {
@@ -513,10 +541,23 @@ function UpdateTaskDemonstration() {
                   <figcaption><a href="https://www.microsoft.com/en-us/research/people/qihua/">Qiuyuan Huang</a></figcaption>
 		</figure>
 		</div>
-
-            </div>
-          </div>
-        </div>
+    </div>
+  </br>
+  <h2 class="title is-3">Sponsors and Organizations</h2>
+  <div class="sponsors-grid">
+      <div class="sponsor">
+          <img src="img/msr_logo.jpg" alt="Microsoft Research">
+      </div>
+      <div class="sponsor">
+          <img src="img/stanford_logo.png" alt="Stanford">
+      </div>
+      <div class="sponsor">
+          <img src="img/ucla_logo.png" alt="UCLA">
+      </div>
+      <div class="sponsor">
+          <img src="img/uw_logo.png" alt="UW">
+      </div>
+  </div>
         <br>
         <br>
         <!--/ Challenge. -->
