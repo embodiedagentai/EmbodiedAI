@@ -81,7 +81,12 @@ a {
   width: 100%;
   height: 100%;
 }
-
+.column {
+  font-size: 18px;
+        }
+.no-wrap {
+  white-space: nowrap;
+}
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
@@ -254,10 +259,10 @@ function UpdateTaskDemonstration() {
         <h2 class="title is-3"> Time and Venue </h2>
         <dl class="row">
           <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Date:</strong></dt>
-          <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">June 17 or 18, 2024</dd>
+          <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">June 18, 2024</dd>
           <br>
           <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Time:</strong></dt>
-          <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">8:30am - 12:30pm</dd>
+          <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">8:30am - 12:00pm</dd>
           <br>
           <dt class="col-sm-2" style="display: inline-block; margin-right: 5px;"><strong>Room:</strong></dt>
           <dd class="col-sm-10" style="display: inline-block; margin-left: 0;">TBD</dd>
@@ -349,40 +354,39 @@ function UpdateTaskDemonstration() {
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>08:30 - 09:00</strong></td>
+                  <td class="no-wrap"><strong>08:30 - 08:40</strong></td>
                   <td>Jianfeng Gao</td>
                   <td>Opening Remarks</td>
                 </tr>
                 <tr>
-                  <td><strong>09:00 - 09:30</strong></td>
-                  <td>Talk1: Yejin Choi</td>
-                  <td>Knowledge Agent</td>
+                  <td class="no-wrap"><strong>08:40 - 09:20</strong></td>
+                  <td>Talk1: Juan Carlos Niebles</td>
+                  <td>Agent Fondation-Models</td>
                 </tr>
                 <tr>
-                  <td><strong>09:30 - 10:00</strong></td>
+                  <td class="no-wrap"><strong>09:20 - 10:00</strong></td>
                   <td>Talk2: Katsushi Ikeuchi</td>
                   <td>Agent Robotics</td>
                 </tr>
                 <tr>
-                  <td><strong>10:00 - 10:30</strong></td>
-                  <td>Talk3: Fei-Fei Li</td>
-                  <td>Agent Fondation-Models</td>
+                  <td class="no-wrap"><strong>10:00 - 10:40</strong></td>
+                  <td>Talk3: TDB</td>
+                  <td>TBD</td>
                 </tr>
                 <tr>
-                  <td><strong>10:30 - 10:45</strong></td>
+                  <td class="no-wrap"><strong>10:40 - 11:00</strong></td>
                   <td>Coffee Break</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><strong>10:45 - 12:00</strong></td>
-                  <td><p>Fei-Fei Li, Yejin Choi, Demetri Terzopoulos,</p>
-		      <p>Katsushi Ikeuchi, Hoi Vo, Jianfeng Gao</p></td>
+                  <td class="no-wrap"><strong>11:00 - 11:50</strong></td>
+                  <td><p>Juan Carlos Niebles, Demetri Terzopoulos, Katsushi Ikeuchi, Hoi Vo, Jianfeng Gao</p></td>
                   <td>Panels and Q&amp;A</td>
                 </tr>
                 <tr>
-                  <td><strong>12:00 - 12:30</strong></td>
+                  <td class="no-wrap"><strong>11:50 - 12:00</strong></td>
                   <td>Naoki Wake and Qiuyuan Huang</td>
-                  <td>Ending Discussion</td>
+                  <td>Ending Remarks</td>
                 </tr>
               </tbody>
             </table>
@@ -406,8 +410,8 @@ function UpdateTaskDemonstration() {
               <!-- Speaker 1 -->
               <div class="column" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <figure class="image is-128x128">
-                  <img class="is-rounded" src="img/Yejin_Choi.jpg" alt="Yejin Choi">
-                  <figcaption><a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a></figcaption>
+                  <img class="is-rounded" src="img/Juan.jpg" alt="Juan Carlos Niebles">
+                  <figcaption><a href="https://www.niebles.net/">Juan Carlos Niebles</a></figcaption>
                 </figure>
               </div>              
               <!-- Speaker 2 -->
@@ -420,8 +424,8 @@ function UpdateTaskDemonstration() {
               <!-- Speaker 3 -->
               <div class="column" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <figure class="image is-128x128">
-                  <img class="is-rounded" src="img/Fei-Fei_Li.jpg" alt="Fei-Fei Li">
-                  <figcaption><a href="https://engineering.stanford.edu/people/fei-fei-li">Fei-Fei Li</a></figcaption>
+                  <img class="is-rounded" src="img/TBD.jpg" alt="TBD">
+                  <figcaption><a href="https://TBD">TBD</a></figcaption>
                 </figure>
               </div>
             </div>
